@@ -1,0 +1,11 @@
+---
+layout: default
+---
+<article class="post container">
+  <a class="back" href="{{ '/news/' | relative_url }}">&larr; 소식 목록</a>
+  <span class="tag">{{ page.category | default: "소식" }}</span>
+  <h1>{{ page.title }}</h1>
+  <p class="post-meta">{{ page.date | date: "%Y.%m.%d" }}{% if page.author %} · {{ page.author }}{% endif %}</p>
+  {% if page.image %}<img class="post-cover" src="{{ page.image | relative_url }}" alt="">{% endif %}
+  <div class="post-body">{{ content }}</div>
+</article>
