@@ -1,0 +1,194 @@
+---
+layout: default
+title: "Welcome Aboard"
+---
+<!-- HERO -->
+<section class="hero">
+  <div class="sky">
+    <span class="cloud c1"></span><span class="cloud c2"></span><span class="cloud c3"></span>
+    <svg class="plane" viewBox="0 0 24 24" aria-hidden="true"><path fill="#fff" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg>
+  </div>
+  <div class="container hero-inner">
+    <p class="eyebrow">Hanyang Women's University · Dept. of Airline Service</p>
+    <h1>Welcome Aboard!<br><span class="grad">꿈을 향해 이륙하는 곳</span></h1>
+    <p class="lead">객실승무원, 공항 지상직, VIP 라운지까지.<br>한양여대 항공과에서 하늘로 가는 나만의 항로를 그려보세요.</p>
+    <div class="hero-cta">
+      <a href="#quiz" class="btn btn-primary">나에게 맞는 항공 직무 찾기</a>
+      <a href="#about" class="btn btn-ghost">학과 둘러보기</a>
+    </div>
+  </div>
+
+  <!-- Boarding pass D-day -->
+  <div class="container">
+    <div class="pass" data-start="{{ site.dday.start }}" data-end="{{ site.dday.end }}">
+      <div class="pass-main">
+        <p class="pass-label">BOARDING PASS</p>
+        <div class="pass-route">
+          <div><small>FROM</small><strong>YOU</strong><span>지금의 나</span></div>
+          <div class="pass-line"><svg viewBox="0 0 24 24"><path fill="currentColor" d="M21 16v-2l-8-5V3.5a1.5 1.5 0 0 0-3 0V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5z"/></svg></div>
+          <div><small>TO</small><strong>HYWU</strong><span>한양여대 항공과</span></div>
+        </div>
+        <p class="pass-note"><b>{{ site.dday.label }}</b> {{ site.dday.start | date: "%m.%d" }} ~ {{ site.dday.end | date: "%m.%d" }}<br>{{ site.dday.note }}</p>
+      </div>
+      <div class="pass-stub">
+        <small>GATE CLOSES IN</small>
+        <strong class="dday">D-?</strong>
+        <a href="{{ site.links.admission }}" target="_blank" rel="noopener" class="btn btn-small">입학처 바로가기</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section id="about" class="section">
+  <div class="container">
+    <p class="kicker">WHY HYWU AVIATION</p>
+    <h2>숫자로 보는 항공과</h2>
+    <p class="sub">항공산업 실무능력을 갖춘 글로벌 전문 인재, 그리고 사람을 먼저 생각하는 서비스인을 키웁니다.</p>
+    <div class="stats">
+      <div class="stat"><strong><span class="count" data-to="1">0</span>위</strong><p>학생 강의만족도</p></div>
+      <div class="stat"><strong><span class="count" data-to="105">0</span>%</strong><p>재학생 충원율</p></div>
+      <div class="stat"><strong><span class="count" data-to="100">0</span>%</strong><p>주문식 교육과정 운영</p></div>
+      <div class="stat"><strong><span class="count" data-to="1">0</span>st</strong><p>재학생 만족도</p></div>
+    </div>
+    <div class="features">
+      <div class="feature"><span class="ico">&#9992;</span><h3>모의 비행 실습</h3><p>기내 모형 실습실에서 실제 비행처럼 기내방송, 음료서비스, 비상탈출까지 연습해요.</p></div>
+      <div class="feature"><span class="ico">&#9678;</span><h3>VR 안전 훈련</h3><p>VR로 항공안전업무를 체험하며 위기 대응 능력을 키워요.</p></div>
+      <div class="feature"><span class="ico">&#9733;</span><h3>항공사 채용설명회</h3><p>현직 객실팀장이 학교로 와서 채용 절차와 면접 팁을 알려줘요.</p></div>
+      <div class="feature"><span class="ico">&#9673;</span><h3>서울 역세권 캠퍼스</h3><p>왕십리·한양대역 근처라 통학이 편하고, 한양학원 인프라를 함께 누려요.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CABIN TABS -->
+<section id="cabin" class="section alt">
+  <div class="container">
+    <p class="kicker">CHOOSE YOUR CABIN</p>
+    <h2>항공과에서 배우는 것</h2>
+    <p class="sub">세 가지 클래스를 눌러 어떤 수업을 듣는지 확인해 보세요.</p>
+    <div class="tabs" role="tablist">
+      <button class="tab active" data-tab="t1">객실서비스</button>
+      <button class="tab" data-tab="t2">운송·공항서비스</button>
+      <button class="tab" data-tab="t3">관광서비스</button>
+    </div>
+    <div class="tab-panel active" id="t1">
+      <p class="panel-desc">하늘 위의 프로페셔널. 승객의 안전과 편안함을 책임지는 객실승무원 역량을 키워요.</p>
+      <ul class="chips"><li>항공객실서비스실무</li><li>기내방송</li><li>기내음료서비스</li><li>항공안전업무(VR)</li><li>항공응급의료실무</li><li>항공 P.E</li><li>항공면접 실무</li><li>항공모의비행</li><li>항공 DGR &amp; CRM</li></ul>
+    </div>
+    <div class="tab-panel" id="t2">
+      <p class="panel-desc">공항의 모든 순간을 움직이는 사람. 예약, 발권, 탑승수속부터 스마트공항까지 배워요.</p>
+      <ul class="chips"><li>항공지상서비스</li><li>항공경영론</li><li>4차산업혁명 스마트공항서비스 실무</li><li>항공서비스마케팅</li><li>항공예약실무</li><li>항공운임발권실무</li><li>글로벌 공항서비스</li><li>항공여객운송서비스 실무</li><li>항공취항지연구</li><li>미래항공과 뉴테크놀로지</li><li>무인멀티콥터실무</li></ul>
+    </div>
+    <div class="tab-panel" id="t3">
+      <p class="panel-desc">서비스의 기본기. 매너, 이미지메이킹, 세계 문화를 이해하는 글로벌 서비스인이 돼요.</p>
+      <ul class="chips"><li>이미지메이킹</li><li>관광학원론</li><li>세계관광과 문화</li><li>관광자원론</li><li>관광법규</li><li>서비스커뮤니케이션</li><li>호스피탈리티 경영</li></ul>
+    </div>
+  </div>
+</section>
+
+<!-- STAMPS -->
+<section class="section">
+  <div class="container">
+    <p class="kicker">COLLECT YOUR STAMPS</p>
+    <h2>졸업할 때 여권에 찍히는 자격증 스탬프</h2>
+    <p class="sub">교과목과 자격증이 연결되어 있어서 수업을 따라가다 보면 자격증이 하나씩 쌓여요. 스탬프를 눌러보세요!</p>
+    <div class="stamps">
+      <button class="stamp">항공예약<br>및 발권</button>
+      <button class="stamp">DCS</button>
+      <button class="stamp">와인<br>소믈리에</button>
+      <button class="stamp">바리스타</button>
+      <button class="stamp">조주기능사</button>
+      <button class="stamp">SMAT</button>
+      <button class="stamp">CS 리더스<br>관리사</button>
+      <button class="stamp">CPR</button>
+      <button class="stamp">컴퓨터<br>활용능력</button>
+      <button class="stamp">MOS</button>
+      <button class="stamp">무인동력<br>비행장치</button>
+    </div>
+    <p class="stamp-count">찍은 스탬프 <b>0</b> / 11</p>
+  </div>
+</section>
+
+<!-- DESTINATIONS -->
+<section class="section dark">
+  <div class="container">
+    <p class="kicker light">DESTINATIONS</p>
+    <h2>졸업 후 나의 목적지</h2>
+    <div class="dest">
+      <div class="dest-card"><span>GATE 01</span><h3>객실승무원</h3><p>국내외 대형 항공사와 LCC의 하늘 위 서비스 전문가</p></div>
+      <div class="dest-card"><span>GATE 02</span><h3>항공사 지상직</h3><p>탑승수속, 발권, 운송 등 공항 현장을 움직이는 전문가</p></div>
+      <div class="dest-card"><span>GATE 03</span><h3>공항 VIP 라운지</h3><p>프리미엄 고객을 맞이하는 라운지 서비스 전문가</p></div>
+      <div class="dest-card"><span>GATE 04</span><h3>서비스 산업 전반</h3><p>호텔, 관광, 고객서비스 등 넓은 서비스 분야로 진출</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section id="quiz" class="section alt">
+  <div class="container narrow">
+    <p class="kicker">FLIGHT TEST</p>
+    <h2>나에게 맞는 항공 직무는?</h2>
+    <p class="sub">4개 질문으로 알아보는 재미 테스트. (가볍게 즐겨주세요!)</p>
+    <div class="quiz" id="quizBox">
+      <div class="quiz-progress"><span></span></div>
+      <p class="quiz-q"></p>
+      <div class="quiz-a"></div>
+      <div class="quiz-result" hidden>
+        <p class="result-tag">YOUR GATE</p>
+        <h3></h3>
+        <p class="result-desc"></p>
+        <button class="btn btn-ghost-dark" id="quizRetry">다시 하기</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CREW -->
+<section id="crew" class="section">
+  <div class="container">
+    <p class="kicker">MEET THE CREW</p>
+    <h2>우리의 기장님, 교수진</h2>
+    <div class="crew">
+      <div class="crew-card"><div class="avatar">윤</div><h3>윤선정 교수</h3><p>항공경영론 · 관광학원론 · 항공서비스마케팅</p></div>
+      <div class="crew-card"><div class="avatar">이</div><h3>이호현 교수</h3><p>항공안전업무 · 항공응급의료실무 · 항공지상서비스</p></div>
+      <div class="crew-card"><div class="avatar">장</div><h3>장희숙 교수</h3><p>항공식음료개론 · 와인양조실무 · 항공예약실무 · 항공운임발권</p></div>
+      <div class="crew-card"><div class="avatar">신</div><h3>신경희 교수</h3><p>이미지메이킹 · 항공객실서비스실무 · 캡스톤디자인 항공모의비행</p></div>
+      <div class="crew-card"><div class="avatar">임</div><h3>임은정 교수</h3><p>항공안전업무(VR) · 이미지메이킹 · 항공객실업무론</p></div>
+      <div class="crew-card"><div class="avatar">이</div><h3>이유나 교수</h3><p>4차산업혁명 스마트공항 서비스 실무</p></div>
+    </div>
+    <p class="center small">전체 교수진은 <a href="{{ site.links.dept_intro }}" target="_blank" rel="noopener">학교 공식 학과소개</a>에서 볼 수 있어요.</p>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="section alt">
+  <div class="container">
+    <p class="kicker">IN-FLIGHT MAGAZINE</p>
+    <h2>항공과 소식</h2>
+    <div class="news">
+      {% for post in site.posts limit:3 %}
+      <a class="news-card" href="{{ post.url | relative_url }}">
+        <span class="tag">{{ post.category | default: "소식" }}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 80 }}</p>
+        <small>{{ post.date | date: "%Y.%m.%d" }}</small>
+      </a>
+      {% endfor %}
+    </div>
+    <p class="center"><a class="btn btn-ghost-dark" href="{{ '/news/' | relative_url }}">소식 더 보기</a></p>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq" class="section">
+  <div class="container narrow">
+    <p class="kicker">FAQ</p>
+    <h2>예비 승객들이 자주 묻는 질문</h2>
+    <details><summary>항공과 입시는 어떻게 평가하나요?</summary><p>2027학년도 기준 항공과는 주요 전형에서 <b>학생부 40% + 면접 60%</b>로 선발해요. 면접 비중이 크기 때문에 태도, 표현력, 서비스 마인드를 꾸준히 준비하는 게 중요해요. 전형별 세부 사항은 입학처 모집요강을 꼭 확인하세요.</p></details>
+    <details><summary>수시 2차 일정은 언제인가요?</summary><p>2027학년도 수시 2차 원서접수는 2026.11.11(수) ~ 11.25(수), 면접은 12.5(토) ~ 12.13(일), 합격자 발표는 12.19(토)예요. (2027학년도 입학전형 시행계획 기준)</p></details>
+    <details><summary>몇 년제인가요? 졸업 후 진로는요?</summary><p>2년제 전문학사 과정이에요. 국내외 항공사 객실승무원, 항공사 지상직, 공항 VIP 라운지 등으로 진출해요.</p></details>
+    <details><summary>재학 중 어떤 자격증을 딸 수 있나요?</summary><p>항공예약 및 발권, DCS, 와인 소믈리에, 바리스타, 조주기능사, SMAT, CS 리더스 관리사, CPR, 컴퓨터활용능력, MOS, 무인동력비행장치 자격증 등을 교과와 연계해 준비할 수 있어요.</p></details>
+    <details><summary>학교는 어디에 있나요?</summary><p>서울 성동구에 있어요. 지하철 2호선 한양대역, 왕십리역과 가까워 통학이 편리해요.</p></details>
+    <p class="small">※ 입시 정보는 변경될 수 있으니 최종 내용은 <a href="{{ site.links.admission }}" target="_blank" rel="noopener">한양여대 입학처</a>에서 확인해 주세요.</p>
+  </div>
+</section>

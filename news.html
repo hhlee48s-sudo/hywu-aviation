@@ -1,0 +1,22 @@
+---
+layout: default
+title: "항공과 소식"
+permalink: /news/
+---
+<section class="section page-head">
+  <div class="container">
+    <p class="kicker">IN-FLIGHT MAGAZINE</p>
+    <h2>항공과 소식</h2>
+    <p class="sub">행사, 특강, 합격 소식, 학생 일상까지. 항공과의 모든 이야기를 담아요.</p>
+    <div class="news">
+      {% for post in site.posts %}
+      <a class="news-card" href="{{ post.url | relative_url }}">
+        <span class="tag">{{ post.category | default: "소식" }}</span>
+        <h3>{{ post.title }}</h3>
+        <p>{{ post.excerpt | strip_html | truncate: 90 }}</p>
+        <small>{{ post.date | date: "%Y.%m.%d" }}</small>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+</section>

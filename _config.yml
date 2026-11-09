@@ -1,0 +1,28 @@
+title: "한양여대 항공과 | Welcome Aboard"
+description: "꿈을 향해 이륙하는 곳, 한양여자대학교 항공과 학생 홍보 블로그"
+lang: ko
+# 저장소 이름이 <아이디>.github.io 이면 baseurl은 "" 로 두세요.
+# 저장소 이름이 hywu-aviation 처럼 일반 이름이면 "/hywu-aviation" 으로 바꾸세요.
+baseurl: "/hywu-aviation"
+url: "https://hhlee48s-sudo.github.io"
+timezone: Asia/Seoul
+permalink: /news/:year/:month/:day/:title/
+markdown: kramdown
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+# 학과 링크 (필요하면 수정)
+links:
+  official: "https://www.hywoman.ac.kr/airlineservice/index.do"
+  dept_intro: "https://www.hywoman.ac.kr/dept/airlineservice.html"
+  admission: "https://ipsi.hywoman.ac.kr/"
+  instagram: ""   # 학과 인스타 주소가 있으면 입력
+  youtube: ""     # 학과 유튜브 주소가 있으면 입력
+
+# 메인 화면 D-day 카드 (입시 일정이 바뀌면 여기만 수정)
+dday:
+  label: "2027학년도 수시 2차 원서접수"
+  start: "2026-11-11"
+  end: "2026-11-25"
+  note: "면접 12.5(토)~12.13(일) · 합격자 발표 12.19(토)"
