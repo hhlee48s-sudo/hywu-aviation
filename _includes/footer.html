@@ -1,0 +1,16 @@
+<footer class="footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="logo">HYWU <b>Aviation</b></p>
+      <p>한양여자대학교 항공과 · 서울특별시 성동구 살곶이길 200</p>
+      <p class="small">이 사이트는 학과 홍보용 학생 블로그입니다. 입시·학사 정보는 반드시 학교 공식 홈페이지에서 최종 확인해 주세요.</p>
+    </div>
+    <div class="footer-links">
+      <a href="{{ site.links.official }}" target="_blank" rel="noopener">학과 공식 홈페이지</a>
+      <a href="{{ site.links.admission }}" target="_blank" rel="noopener">입학처</a>
+      {% if site.links.instagram != "" %}<a href="{{ site.links.instagram }}" target="_blank" rel="noopener">Instagram</a>{% endif %}
+      {% if site.links.youtube != "" %}<a href="{{ site.links.youtube }}" target="_blank" rel="noopener">YouTube</a>{% endif %}
+      <a href="#top">맨 위로 &uarr;</a>
+    </div>
+  </div>
+</footer>
